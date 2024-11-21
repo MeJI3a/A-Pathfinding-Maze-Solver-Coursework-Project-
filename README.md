@@ -11,6 +11,7 @@ This project demonstrates fundamental algorithmic thinking, problem-solving skil
 You can watch the video showing how the A* algorithm solves the maze here:
 
 [Watch the Video](https://youtu.be/VWC7HKGGEQY?si=Xl3yh11YZoQ5jt6v)
+https://youtu.be/VWC7HKGGEQY?si=Xl3yh11YZoQ5jt6v
 
 ## Project Details
 
