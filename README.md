@@ -1,28 +1,53 @@
-# A* Maze Solver
+# A* Maze Solver Project
 
-## Project Description
+## Overview
 
-This project implements the **A* algorithm** to solve a maze and find the shortest path from a starting point to the goal. The maze is visualized step-by-step as the algorithm searches for the optimal path. The implementation uses **matplotlib** for real-time display and the **PriorityQueue** to implement the A* search.
+This project implements the A* algorithm to find the shortest path in a maze. The maze is represented by a grid where obstacles are denoted by `1` and open paths by `0`. The goal is to visualize how the A* algorithm works as it navigates through the maze from a start point to an end point, finding the most efficient route while avoiding obstacles.
+
+This project demonstrates fundamental algorithmic thinking, problem-solving skills, and visualization techniques in Python, which are essential skills for data analysts.
 
 ### Video Demonstration
 
-You can watch the algorithm in action here:
+You can watch the video showing how the A* algorithm solves the maze here:
 
-[Watch the A* algorithm solving the maze](https://youtu.be/VWC7HKGGEQY)
+[Watch the Video](https://youtu.be/VWC7HKGGEQY)
+
+## Project Details
+
+### Key Features
+
+- **A* Algorithm**: Implements the A* search algorithm to find the shortest path between a start and end point in a maze grid.
+- **Maze Visualization**: Uses `matplotlib` for real-time visualization of the maze-solving process, showing how the algorithm explores the maze and eventually finds the optimal path.
+- **Interactive Mode**: The visualization updates in real-time to provide an engaging view of the algorithm's step-by-step solution.
 
 ### How It Works
-- **Maze Representation**: The maze is represented as a 2D list, where `0` indicates a free space and `1` represents a wall.
-- **A* Algorithm**: The algorithm finds the shortest path by evaluating the cost of each move and using the **Manhattan distance** as the heuristic for efficient pathfinding.
-- **Visualization**: The `matplotlib` library is used to draw the maze, show the algorithm's progress, and display the found path.
 
-### Key Functions:
-- `draw_maze()`: Displays the initial maze.
-- `highlight_rect()`: Highlights the current cell being explored by the algorithm.
-- `astar()`: The core function that implements the A* search algorithm.
-- `draw_path()`: Visualizes the final path found by the algorithm.
+1. **Maze Representation**: The maze is a 2D grid where:
+   - `1` represents walls/obstacles.
+   - `0` represents open paths.
 
-Feel free to modify the maze or experiment with different start and end points. Enjoy exploring the algorithm's pathfinding process!
+2. **A* Search**: The A* algorithm finds the shortest path by:
+   - Using the **Manhattan distance** as a heuristic to estimate the distance to the goal.
+   - Considering all possible movements (up, down, left, right) while avoiding walls.
+   - Expanding the search space in order of lowest cost, aiming for the optimal solution.
 
----
+3. **Real-Time Visualization**: As the algorithm explores the maze, it highlights the cells being evaluated and shows the path it follows in real-time.
 
-The project demonstrates the **A* pathfinding algorithm** with a **dynamic visual display** of the maze-solving process.
+4. **Interactive Plot**: The project uses `matplotlib` to dynamically visualize the grid, with different colors representing various stages of the algorithm's process:
+   - **Yellow** for the start.
+   - **Green** for the end.
+   - **Blue** for the path found.
+   - **Black** for obstacles.
+
+## Usage
+
+### Requirements
+
+To run this project, you need Python 3.x installed on your system, along with the following libraries:
+- `matplotlib`
+- `numpy`
+
+You can install these libraries using `pip`:
+
+```bash
+pip install matplotlib numpy
