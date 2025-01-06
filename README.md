@@ -13,6 +13,10 @@ You can watch the video showing how the A* algorithm solves the maze here:
 [Watch the Video](https://youtu.be/VWC7HKGGEQY?si=Xl3yh11YZoQ5jt6v)
 
 ## Project Details
+## Research Paper
+For a detailed explanation of the algorithm, methodology, and findings, refer to the research paper:
+[CS6053 Artificial Intelligence.pdf](./CS6053%20Artificial%20Intelligence.pdf)
+
 
 ### Key Features
 
